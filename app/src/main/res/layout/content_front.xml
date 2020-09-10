@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".FrontActivity"
+    tools:showIn="@layout/app_bar_front">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customfonts.MyTextView_SF_Pro_Light
+                    android:id="@+id/pelihara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peliharaan"
+                    android:textStyle="bold"
+                    android:textColor="#17C69B"
+                    android:layout_margin="10dp"
+                    android:textSize="30sp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@id/pelihara"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/white"
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+                <ProgressBar
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <customfonts.MyTextView_SF_Pro_Light
+                    android:id="@+id/kategori"
+                    android:layout_below="@id/recyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori"
+                    android:textStyle="bold"
+                    android:textColor="#17C69B"
+                    android:layout_margin="10dp"
+                    android:textSize="30sp"/>
+
+
+                <ImageButton
+                    android:id="@+id/btn_search"
+                    android:layout_below="@id/kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/cat1"/>
+
+                <ImageButton
+                    android:id="@+id/btn_category"
+                    android:layout_below="@id/btn_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/cat2"/>
+
+                <ImageButton
+                    android:layout_below="@id/btn_category"
+                    android:id="@+id/btn_consult"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/cat3"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

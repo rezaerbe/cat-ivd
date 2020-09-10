@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cat IVD</string>
+    <string name="gender_unknown">Unknown</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="manage">Manage</string>
+    <string name="consult">Consult</string>
+    <string name="title_activity_front">FrontActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>
